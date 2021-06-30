@@ -1,0 +1,32 @@
+#main, footer {
+  padding-left: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .sidebar-collapse {
+    top: -52px;
+  }
+}
+
+
+header .brand-logo {
+  margin: 3px 0px;
+  padding: 4px 50px;
+}
+
+header .brand-logo img {
+  width: 54px;
+}
+
+
+.menu-sidebar-collapse {
+  margin: 0 10px 0 18px;
+}
+
+.header-search-wrapper {
+  margin-left: 250px;
+}
+
+.doughnut-chart-status {
+  top: -85px;
+}

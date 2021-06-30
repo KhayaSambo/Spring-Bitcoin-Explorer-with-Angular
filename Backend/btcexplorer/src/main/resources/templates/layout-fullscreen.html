@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<!--================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 3.1
+
+
+================================================================================ -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+    <title>JXUST COIN</title>
+
+    <!-- Favicons-->
+    <link rel="icon" href="images/favicon/JXUST.ico" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
+
+
+    <!-- CORE CSS-->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- CSS for full screen (Layout-2)-->
+    <link href="css/layouts/style-fullscreen.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->
+    <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+</head>
+
+<body>
+<!-- Start Page Loading -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!-- End Page Loading -->
+
+
+
+<!-- START HEADER -->
+<header id="header" class="page-topbar">
+    <!-- start header nav-->
+    <div class="navbar-fixed">
+        <nav class="navbar-color">
+            <div class="nav-wrapper">
+                <ul class="left">
+                    <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/JXUST.png" alt="logo"></a> <span class="logo-text">JXUST COIN</span></h1></li>
+                </ul>
+                <div class="header-search-wrapper hide-on-med-and-down">
+                    <i class="mdi-action-search"></i>
+                    <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore "/>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end header nav-->
+</header>
+<!-- END HEADER -->
+
+
+
+<!-- START MAIN -->
+<div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+        <!-- START LEFT SIDEBAR NAV-->
+        <aside id="left-sidebar-nav">
+            <ul id="slide-out" class="side-nav leftside-navigation">
+                <li class="user-details cyan darken-2">
+                    <div class="row">
+                        <div class="col col s4 m4 l4">
+                            <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                        </div>
+                        <div class="col col s8 m8 l8">
+                            <ul id="profile-dropdown" class="dropdown-content">
+                                <li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
+                                </li>
+                                <li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
+                                </li>
+                                <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
+                                </li>
+                                <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                                </li>
+                            </ul>
+                            <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                            <p class="user-roal">Administrator</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="bold"><a href="layout-fullscreen.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+                </li>
+                <li><a href="blockinfo.html">BlockInfo</a>
+                </li>
+                <li><a href="Wallet.html">Wallet</a>
+                </li>
+                <li><a href="control.html">Control</a>
+                </li>
+
+
+            </ul>
+            <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light cyan"><i class="mdi-navigation-menu"></i></a>
+        </aside>
+        <!-- END LEFT SIDEBAR NAV-->
+
+
+
+        <!-- START CONTENT -->
+        <section id="content">
+
+            <div class="container">
+                <h2>What is Bitcoin?</h2>
+                Bitcoin is an experimental digital currency that enables instant payments to anyone, anywhere in the
+                world. Bitcoin uses peer-to-peer technology to operate with no central authority: managing transactions
+                and issuing money are carried out collectively by the network. Bitcoin Core is the name of open source
+                software which enables the use of this currency.
+
+                For more information read the original Bitcoin whitepaper.<a
+                    href="https://bitcoin.org/en/bitcoin-paper">whitepaper</a>
+                <h2>Bitcoin Explorer</h2>
+                Welcome to Bitcoin Explorer. In this site, you can get information and blockchain data about Bitcoin
+                (BTC).
+                <ol>
+                    <li>Blockchain information for Bitcoin (BTC) including historical blocks, the most recently blocks
+                        infomation, and data for the latest transactions.
+                    </li>
+                    <li>
+                        Mining information for Bitcoin (BTC) including block template, network hash per second,
+                        prioritise transaction,
+                        and block and header of submit.
+                    </li>
+                    <li>Network information and functions for Bitcoin (BTC) including add peer node, clear banned,
+                        disconnect from a peer,
+                        show network information, show peer information and ping a node address.
+                    </li>
+                    <li>
+                        Wallet functions for Bitcoin（BTC）including dump private key, dump wallet, get balance by
+                        address,
+                        get a new address, and get wallet information.
+                    </li>
+                    <li>
+                        ... ...
+                    </li>
+                </ol>
+                <h2>Links</h2>
+                If you want get more information about Bitcoin（BTC), you can visited these links.
+                <p><a href="https://bitcoin.org/en/">Bitcoin</a></p>
+                <p><a href="https://bitcoin.org/en/bitcoin-paper">Bitcoin White Pager</a></p>
+                <p><a href="https://github.com/bitcoin/bitcoin">github.com</a></p>
+                <p><a href="https://www.blockchain.com/explorer/">Blockchain.com</a></p>
+            </div>
+                <!--card widgets start-->
+
+                <!--end container-->
+        </section>
+        <!-- END CONTENT -->
+
+
+    </div>
+    <!-- END WRAPPER -->
+
+</div>
+<!-- END MAIN -->
+
+
+
+
+
+<!-- START FOOTER -->
+
+<!-- ================================================
+Scripts
+================================================ -->
+
+<!-- jQuery Library -->
+<script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
+<!--materialize js-->
+<script type="text/javascript" src="js/materialize.js"></script>
+<!--scrollbar-->
+<script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+
+<!-- chartist -->
+<script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>
+
+<!-- chartjs -->
+<script type="text/javascript" src="js/plugins/chartjs/chart.min.js"></script>
+<script type="text/javascript" src="js/plugins/chartjs/chart-script.js"></script>
+
+<!-- sparkline -->
+<script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>
+
+<!-- google map api -->
+<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek"></script>
+
+<!--jvectormap-->
+<script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script type="text/javascript" src="js/plugins/jvectormap/vectormap-script.js"></script>
+
+
+<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+<script type="text/javascript" src="js/plugins.js"></script>
+<!--custom-script.js - Add your own theme custom JS-->
+<script type="text/javascript" src="js/custom-script.js"></script>
+
+</body>
+
+</html>
