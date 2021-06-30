@@ -1,0 +1,31 @@
+<section type="content">
+
+    <div class="container">
+  
+        <div class="card">
+            <div class="desc"><b>RPC Information</b>
+                <br />
+                <input type="button" value="Get" (click)="getRPCInfo()">
+                <br/>
+                <b>Active Commands:</b><br/>{{rpcInfo?.active_commands}}
+                <b>Log Path:</b><br />{{rpcInfo?.logpath}}
+            </div>
+        </div>
+  
+        <div class="card">
+            
+            <div class="desc"><b>Uptime</b>
+            <br />
+                
+                <input type="button" value="Get" (click)="getUptime()">
+                <br />
+                <b>Uptime:</b>
+                <br/>
+                {{uptime}}
+            </div>
+        </div>
+  
+    </div>
+  
+  </section>
+  

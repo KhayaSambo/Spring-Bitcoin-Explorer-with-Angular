@@ -1,0 +1,47 @@
+<section type="content">
+
+  <div class="container">
+
+      <div class="card">
+          <div class="desc"><b>Balance</b>
+              <br />
+              <input type="button" value="Get" (click)="getBalance()">
+              <br/>
+              {{balance}}
+          </div>
+      </div>
+
+
+
+      <div class="card">
+          
+          <div class="desc"><b>List Wallets</b>
+          <br />
+              
+              <input type="button" value="Get" (click)="listWallets()">
+              <br />
+              Wallets:
+              <br/>
+              {{wallets}}
+               
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="desc">
+              <b>Wallet Information</b>
+              <br />
+              
+              <input type="button" value="Get" (click)="getWalletInfo()">
+              <p><b> wallet Name:</b> {{walletInfo?.walletname}} </p> 
+              <p><b> Version:</b> {{walletInfo?.walletversion}}</p> 
+              <p><b> Unconfirmed Balance:</b> {{walletInfo?.unconfirmed_balance}}</p> 
+              <p><b> Keypool Size:</b>  {{walletInfo?.keypoolsize}}</p> 
+              <p><b> Scanning:</b> {{walletInfo?.scanning}}</p> 
+          </div>
+      </div>
+
+
+  </div>
+
+</section>

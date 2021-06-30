@@ -1,0 +1,77 @@
+.card {
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    margin: 100px;
+    border: 1px solid #ccc;
+    float: left;
+  
+    min-height: 00px;
+    width: 500px;
+    border-radius: 6px;
+    position: relative;
+    background-color: #f2f2f2;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 16%);
+    margin: 20px;
+  
+    word-wrap: break-word;
+  }
+  .container {
+    position: relative;
+  }
+  .card .front,
+  .card .back {
+    backface-visibility: hidden;
+    display: grid;
+    place-items: center;
+    position: absolute;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    float: left;
+  }
+  
+  .card:hover {
+    border: 0.5px solid rgb(240, 160, 10);
+    box-shadow: 0px 2px 15px 0px rgb(240, 160, 10);
+  }
+  
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  input {
+    border: none;
+    outline: none;
+    display: inline-block;
+    height: 34px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 24%), 0 3px 10px 0 rgb(0 0 0 / 19%);
+    border-radius: 22px;
+    margin: 10px;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 2px;
+    align-items: flex-start;
+  }
+  
+  input[type="button"] {
+    font-weight: bold;
+    background: rgb(128, 0, 32) !important;
+    color: #fff;
+    position: relative;
+    left: 9px;
+    margin: 10px;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  input[value="Turn Around"] {
+    background: rgb(191, 54, 12) !important;
+  }
+  

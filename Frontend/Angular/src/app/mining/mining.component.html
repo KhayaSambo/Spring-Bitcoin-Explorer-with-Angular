@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card">
+        <div class="desc"><b>Mining Information</b>
+            <br />
+            
+            <input type="button" value="Get" (click)="getMiningInfo(address)">
+            <br/>
+            <p><b>Blocks: </b>{{miningInfo?.blocks}}</p>
+            <p><b>Difficulty:</b> {{miningInfo?.difficulty}}</p>
+            <p><b>Network Hash PS:</b> {{miningInfo?.networkhashps}}</p>
+            <p><b>Pooled TX: </b>{{miningInfo?.pooledtx}}</p>
+            <p><b>Chain: </b>{{miningInfo?.chain}}</p>
+
+        </div>
+    </div>
+</div>

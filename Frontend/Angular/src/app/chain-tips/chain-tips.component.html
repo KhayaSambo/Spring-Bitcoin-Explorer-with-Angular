@@ -1,0 +1,11 @@
+<div class="container"  **ngFor="let tip of tips">
+    <div class="card">
+        <div class="desc"><b>Block Chain Tips</b>
+            <br />
+            {{tip?.height}}
+            {{tip?.hash}}
+            {{tip?.branchlen}}
+            {{tip?.status}}
+        </div>
+    </div>
+</div>

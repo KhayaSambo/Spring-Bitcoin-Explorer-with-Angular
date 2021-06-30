@@ -1,0 +1,14 @@
+<div class="container">
+        <div class="card">
+            <div class="desc"><b>Validate Address</b>
+                <br />
+                <input type="string" name="address" [(ngModel)]="address" placeholder="Enter the Address"/>
+                <input type="button" value="Get" (click)="validateAddress(address)">
+                <br/>
+                <p><b>Valid: </b>{{validateaddress?.isvalid}}</p>
+                <p><b>Address:</b> {{validateaddress?.address}}</p>
+                <p><b>Pub Key:</b> {{validateaddress?.scriptPubKey}}</p>
+                <p><b>Witness Version: </b>{{validateaddress?.witness_version}}</p>
+            </div>
+        </div>
+</div>

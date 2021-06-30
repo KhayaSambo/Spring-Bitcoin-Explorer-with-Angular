@@ -1,0 +1,111 @@
+<section type="content">
+
+    <div class="container">
+
+        <div class="card">
+            <div class="desc"><b>Block Hash</b>
+                <br />
+                <input type="number" name="height" [(ngModel)]="height" placeholder="Enter the height"/>
+                <input type="button" value="Get" (click)="getBlockHash(height)">
+                <br/>
+                <b>Block Hash:</b>
+                <br />
+                {{blockHash}}
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            
+            <div class="desc"><b>Get the Block</b>
+            <br />
+                <input type="string" name="hash" [(ngModel)]="hash" placeholder="Enter the hash value"/>
+                <input type="button" value="Get" (click)="getBlock(hash)">
+                <br />
+               <b> Block Hash:</b><br />{{block?.hash}}
+               <br />
+                
+               <b> Height:</b> <br /> {{block?.height}}
+                 
+            </div>
+        </div>
+
+
+
+
+  
+        <div class="card">
+            <div class="desc"><b>Difficulty</b> 
+                <br />
+                <input type="button" value="Get" (click)="getDifficulty()">
+                <br />
+                <b> Difficulty: </b>
+                <br/>
+                <b>{{difficulty}}</b>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="desc"><b>Best Block Hash</b>
+                <br />
+                <input type="button" value="Get" (click)="getBestBlockHash()">
+                <br />
+                <b>Best Block Hash:</b>
+               <br />
+                {{bestHash}}
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="desc"><b>Block Count</b>
+                <br />
+                <input type="button" value="Get" (click)="getBlockCount()">
+                <br />
+               <b>Count:</b>
+               <br />
+                {{count}}
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="desc"><b>Get New Address</b>
+                <br />
+                <input type="string" name="label" [(ngModel)]="label" placeholder="Label"/>
+                <input type="string" name="address_type" [(ngModel)]="address_type" placeholder="Address Type"/>
+                <br />
+                <input type="button" value="Get" (click)="getNewAddress(label,address_type)">
+                <br />
+                <b>Address:</b>
+                <br/> {{address}}
+            </div>
+        </div>
+        <div class="card">
+            <div class="desc"><b>Block Chain Information</b>
+                <br />
+                <input type="button" value="Get" (click)="getBlockChainInfo()">
+                <p><b> Chain:</b> {{info?.chain}} </p> 
+                <p><b> Blocks:</b> {{info?.blocks}}</p> 
+                <p><b> Chainwork:</b> {{info?.verificationprogress}}</p> 
+                <p><b> Pruned:</b>  {{info?.pruned}}</p> 
+                <p><b> Softforks Bip65 Type:</b> {{info?.softforks.bip65.type}}</p> 
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="desc"><b>Memory Pool Info</b>
+                <br />
+                <input type="button" value="Get" (click)="getMemPoolInfo()">
+                <p><b>Size: </b>{{poolInfo?.size}}</p>
+                <p><b>Usage:</b> {{poolInfo?.usage}}</p>
+                <p><b>Maxem:</b> {{poolInfo?.maxmempool}}</p>
+                <p><b>Broadcast Count: </b>{{poolInfo?.unbroadcastcount}}</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+</section>
+ 
